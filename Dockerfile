@@ -4,7 +4,7 @@ FROM docker:stable
 RUN wget https://storage.googleapis.com/kubernetes-release/release/v1.17.2/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl
 RUN chmod a+x /usr/local/bin/kubectl
 RUN cd /home \
-	&& wget https://get.helm.sh/helm-v3.0.3-linux-arm64.tar.gz -O helm.tar.gz \
+	&& wget https://get.helm.sh/helm-v3.0.3-linux-amd64.tar.gz -O helm.tar.gz \
 	&& tar -xvf helm.tar.gz \
 	&& rm helm.tar.gz \
 	&& mv linux-amd64/helm /usr/local/bin/helm \
